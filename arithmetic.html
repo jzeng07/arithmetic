@@ -1,0 +1,36 @@
+<html>
+<head>
+
+</head>
+
+<body>
+ <h2>Arithmetic Games</h2>
+ <form class='box'>2+3=
+   <input type='text' id='answer' size='6'/>
+ </form>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script type="text/javascript" src="Arithmetic.js"></script>
+
+ <script>
+   $(document).ready(function() {
+ $("#answer").on("input", function(e) {
+   var total = $('#answer').val();
+   if(total === 5) {
+     alert('Nice!');
+   }
+   else {
+     alert('Do again!');
+   }
+ })
+
+})
+
+ </script>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script type="text/javascript" src="Arithmetic.js"></script>
+</body>
+
+</html>
+
